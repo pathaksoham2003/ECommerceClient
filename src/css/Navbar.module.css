@@ -1,0 +1,121 @@
+.contain{
+    background-color:#0b0534;
+    height: 64px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    z-index:5;
+}
+.toggle{
+    display:none;
+    position:absolute;
+    top:0.5rem;
+    right:2rem;
+    color:aqua;
+    height:50px;
+    width:50px;
+}
+.logo{
+    display:none;
+    color:white;
+}
+.navlinks{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:70%;
+    height:64px;
+    z-index:4;
+}
+.rNavlinks{
+    background:linear-gradient( #4b56c7,#021f46);
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    position:absolute;
+    top:64px;
+    width:100%;
+    z-index:4;
+}
+.rNavlinks a {
+    padding:1.2% 0;
+    letter-spacing: 0.08rem;
+    text-align: center;
+    width:100%;
+    color:white;
+    text-decoration: none;   
+    font-weight:700;
+    font-size:1.2rem;
+    padding:1rem 0;
+}
+.rNavlinks a:hover{
+    letter-spacing: 0.1rem;
+    font-size: 1.7rem;
+    font-weight:900;
+    color:#021f46;
+    background-color: aqua;
+}
+.navlinks a {
+    color:white;
+    text-decoration: none;   
+    font-weight:700;
+    font-size:1.2rem;
+}
+.navlinks a:hover{
+    font-size: 1.5rem;
+    font-weight:900;
+    border-radius: 10px;
+    box-shadow:0 0 20px 3px aqua;
+    padding:0.2% 1.5%;
+    color:#021f46;
+    background-color: aqua;
+}
+
+@media (max-width:480px){
+    .contain{
+        justify-content: flex-start;
+    }
+    .toggle{
+        display:block;
+    }
+    .navlinks{
+        display:none;
+    }
+    .logo{
+        display:block;
+        padding:2rem;
+    }
+}
+@media (min-width:481px) and (max-width:767px){
+    .contain{
+        justify-content: flex-start;
+    }
+    .toggle{
+        display:block;
+    }
+    .navlinks{
+        display:none;
+    }
+    .logo{
+        display:block;
+        padding:2rem;
+    }
+}
+@media (min-width:768px) and (max-width:1023px){
+    .contain{
+        justify-content: flex-start;
+    }
+    .toggle{
+        display:block;
+    }
+    .navlinks{
+        display:none;
+    }
+    .logo{
+        display:block;
+        padding:2rem;
+    }
+}

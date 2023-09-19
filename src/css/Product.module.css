@@ -1,0 +1,175 @@
+.contain {
+  height: 930px;
+  background: linear-gradient(#021f46, #9198e5);
+  width: 100%;
+  display: grid;
+  padding-top: 20px;
+  grid-template: 500px 300px / 80%;
+  gap: 1%;
+  justify-content: center;
+}
+.perPro {
+  border: 2px solid yellow;
+  display: grid;
+  grid-template: 100%/4fr 3fr;
+}
+.sideIHold {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height:100%;
+}
+.exImg {
+  border: 3px solid white;
+  height: 60%;
+  width: 20%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+.mainImg {
+  width: 100%;
+  height:calc(100% - 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+}
+.Mimg {
+  width: 100%;
+  height: 100%;
+}
+.desHolder {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 100%; /* Adjust as needed */
+  height: 95%; /* Ensure the container takes up full height */
+}
+.name{
+  color:white;
+}
+.prq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.desc {
+  color:white;
+  flex: 1; /* Take up remaining vertical space */
+  overflow-y: auto; /* Scrollbar will appear when content overflows */
+}
+
+.simHolder {
+  padding: 1% 0;
+  border: 2px solid white;
+  width: 100%;
+  overflow: scroll;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.imgHold {
+  height: 100%;
+  width: 100px;
+}
+.other{
+  height: 100%;
+}
+.heading{
+  font-size: 1.5rem;
+  color:white;
+  font-weight:600;
+}
+.card {
+  background-color: #021f46;
+  width: 15%;
+  height: 100%;
+  margin: 0 0.5%;
+  display: flex;
+  flex-direction: column;
+}
+.card:hover {
+  box-shadow: 0px 0px 20px 0px aqua;
+}
+.iholder {
+  height: 80%;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+  background-color: #fff;
+  height: 210px;
+  transition-duration: 500ms;
+  height: 100%;
+}
+.img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition-duration: 500ms;
+}
+.span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  height: auto;
+  max-height: 80px;
+  font-size: 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.ratings {
+  color: white;
+  height: 40px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cardBot{
+  display:inline-flex;
+  justify-content: space-between;
+}
+@media (max-width: 480px) {
+  .contain {
+    grid-template: 750px 200px / 80%;
+  }
+  .perPro {
+    border: 2px solid yellow;
+    display: grid;
+    grid-template: 450px 200px/100%;
+  }
+  
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .contain {
+    grid-template: 1000px 200px / 80%;
+  }
+  .perPro {
+    border: 2px solid yellow;
+    display: grid;
+    grid-template: 3fr 1fr/100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  
+}
+@media (min-width: 1024px) {
+  .mainImg {
+    padding: 5%;
+  }
+}
